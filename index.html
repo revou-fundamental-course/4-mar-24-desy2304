@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator BMI - DESY</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="container-item">
+                <h2>Kalkulator BMI</h2>
+                <p>Menghitung berat badan dengan Kalkulator Indeks Massa Tubuh (BMI) memberikan gambaran cepat tentang kesehatan anda. Yuk, hitung sekarang di kalkulator BMI.</p>
+                <section class="container-form">
+                    <div>
+                        <label>Jenis Kelamin</label><br />
+                        <input type="radio" id="sex-man"><label for="sex-man">Laki-laki</label>
+                        <input type="radio" id="sex-woman"><label for="sex-woman">Perempuan</label>
+                    </div>
+                    <div>
+                        <label>Berat Badan (kg)</label><br />
+                        <input type="number" id="weight-input">
+                    </div>
+                    <div>
+                        <label id="age-input">Usia (tahun)</label><br />
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label>Tinggi badan (cm)</label><br />
+                        <input type="number" id="height-input">
+                    </div>
+                    <button type="button" id="calculate-button" onclick="calculate()">Hitung BMI</button>
+                    <button type="Button" id="reset-button">Reset</button>
+                </section>
+                <section>
+                    <h3>Keunggulan fitur</h3>
+                    <p>1. Menghitung berat badan <br /> 2. Menentukan kategori berat badan ideal atau tidak <br /> 3. Mempersiapkan program penurunan berat badan</p>
+                </section>
+                <section>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memnuhi syarat seperti dokter.</p>
+                </section>
+                <section>
+                    <p>Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indeks Massa Tubuh (BMI) dihitung sebagai berat badan anda (kg) dibagi dengan kuadrat tinggi badan anda (m) atau BMI = Kg/M^2</p>
+                </section>
+            </section>
+            <section class="container-item">
+                <h2>Hasil</h2>
+                <section class="container-result">
+                    <h4 id="bmi-category">-</h4>
+                    <h1 id="result-bmi">0</h1>
+                    <button type="button">Download Hasil BMI</button>
+                </section>
+                <section id="result-section">
+                    <p id="result-message" style="display: none;">Hasil BMI diantara 23 dan 25</p>
+                    <p>Anda berada dalam kategori overweight atau berat badan berlebih.<br />Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga.<br />Jika BMI anda berada dalam kategori ini maka anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+                </section>    
+                <section class="container-application">
+                    <button type="button">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button type="button">Registrasi Online Ahli Gizi</button>
+                </section>
+                <section id="additional-result-section">    
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran anda terkait dengan berat badan anda</p>
+                </section>
+                <section id="case-section" class="container-case">
+                    <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
+                    <p>Diabetes<br/>Hipertensi<br/>Sakit Jantung<br/>Osteoarthritis</p>
+                </section>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

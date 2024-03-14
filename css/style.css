@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(103, 66, 143);
+}
+
+body>header {
+    color: aliceblue;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+.main-container {
+    display: flex; 
+    
+}
+
+.container-item {
+    border: 1px solid purple;
+    border-radius: 4px;
+    width: 100%;
+    padding: 24px;
+    background-color: rgb(242, 206, 253);
+}
+
+.container-item>h2 {
+    text-align: center;
+}
+
+.container-item>p {
+    text-align: center;
+}
+
+.container-result {
+    text-align: center;
+    background-color: rgb(224, 162, 247);
+    padding-top: 5px;
+    padding-bottom: 24px;
+    border-radius: 10px;
+}
+
+.container-result>button {
+    border-radius: 5px;
+    background-color: rgb(105, 56, 121);
+    color: aliceblue;
+}
+
+.container-form {
+    background-color: rgb(224, 162, 247);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-form>div {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container-form>button {
+    border-radius: 5px;
+    background-color: rgb(105, 56, 121);
+    color: aliceblue;
+}
+
+.container-form>div>input[type="number"] {
+    border-radius: 5px;
+}
+
+.container-application {
+    text-align: center;
+}
+
+.container-application>button {
+    border-radius: 5px;
+    background-color: rgb(105, 56, 121);
+    color: aliceblue;
+}
+
+.container-case {
+    text-align: center;
+    background-color: rgb(224, 162, 247);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
